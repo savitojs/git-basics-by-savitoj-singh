@@ -13,3 +13,5 @@ build_pdf:
     untracked: true
   only:
     - master
+  tags:
+    - shared

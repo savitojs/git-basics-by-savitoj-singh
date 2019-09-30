@@ -1,0 +1,15 @@
+build_pdf:
+  image: ubuntu:18.04
+  before_script:
+    - apt-get update -y
+    - apt-get install -y pandoc
+    - gem install kramdown
+    - gem install prawn
+    - gem install prawn-table
+  script:
+    # Runs pandoc on all .md files in the repo and outputs them as PDF
+    - find . -name '*.md' -exec sh -c 'kramdown $0 --output pdf > $0.pdf' {} \;
+  artifacts:
+    untracked: true
+  only:
+    - master

@@ -2,7 +2,7 @@ build_pdf:
   image: ubuntu:18.04
   before_script:
     - apt-get update -y
-    - apt-get install -y pandoc
+    - apt-get install -y pandoc rubygems
     - gem install kramdown
     - gem install prawn
     - gem install prawn-table

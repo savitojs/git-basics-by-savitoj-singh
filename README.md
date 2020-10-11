@@ -23,6 +23,7 @@
 - GIT is Distributed version control system (DVCS)
 
 #### Little History
+
 `First Generation:`
   - Single-File system
   - No Network support
@@ -81,6 +82,7 @@ git config --global color.ui auto
 ```
 
 ### WorkFlow and Repos
+
 - Create repo
 - add files
 - commit changes
